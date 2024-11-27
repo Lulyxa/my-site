@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接示例</title>
+    <style>
+        #hiddenContent {
+            display: none;
+            margin-top: 20px;
+        }
+        #showContent {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>欢迎访问我的网站</h1>
+    <p id="showContent" onclick="toggleContent()">点击这里查看我喜欢你的话</p>
+    <div id="hiddenContent">
+        <p>喜欢你大概是这个世界上，最独断最没有道理的事了，不是权衡利弊，不是见色起意，而是突然间有了一个你让我牵肠挂肚，割舍不下。你是我安稳岁月里的节外生枝，是我平淡生活里的日月星辰。</p>
+        <p>不管是清晨的日出，还是正午的小憩，又或是漫天星辰的夜晚，我都想和你一起度过。别怀疑我为什么喜欢你，就像鱼恋着海，鸟儿恋着天空，我也不太懂这是什么道理，我想这就好像呼吸，不用练习，只因为是你。</p>
+        <p>遇见你是故事的开始，走到底是余生的欢喜。有一个喜欢的人真是太好了。我浪费光阴虚度岁月的时候，觉得人间不过如此。</p>
+    </div>
+
+    <script>
+        function toggleContent() {
+            var content = document.getElementById('hiddenContent');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
